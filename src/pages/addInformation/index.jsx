@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import {
   FaUserPlus,
   FaUserCheck,
@@ -8,18 +13,24 @@ import {
   FaSave,
   FaTrashAlt,
 } from "react-icons/fa";
-import "./stayled.css"; // CSS faylini import qilish
-import { DateRangePicker } from "rsuite";
+import "./stayled.css";
+
 import Create from "../../components/create";
-import "./stayled.css"
+import "./stayled.css";
+import * as locales from "rsuite/locales";
+import { data } from "react-router-dom";
 
 const TaskForm = () => {
   const [dueDate, setDueDate] = useState(null);
   const [taskContent, setTaskContent] = useState("");
 
   const handleSave = () => {
-    // console.log("Saved:", { dueDate, taskContent });
+    console.log({ dueDate, taskContent }, taskContent);
     // Qo'shimcha logika qo'shing (API chaqirish yoki state boshqaruvi uchun)
+  };
+
+  const dataPiccer = (e) => {
+    console.log(e);
   };
 
   const handleClear = () => {
@@ -29,19 +40,23 @@ const TaskForm = () => {
 
   return (
     <div>
-        <div className="box_top">
-          <div className="paragrf"> Shaxsiy topshiriq yaratish</div>
-          <p className="paragrf_discription">
-            {" "}
-            Shaxsiy topshiriqlarni yaratish va ularga ijrochilarni belgilash{" "}
-          </p>
-        </div>
+      <div className="box_top">
+        <div className="paragrf"> Shaxsiy topshiriq yaratish</div>
+        <p className="paragrf_discription">
+          {" "}
+          Shaxsiy topshiriqlarni yaratish va ularga ijrochilarni belgilash{" "}
+        </p>
+      </div>
 
       <div className="task-form-container">
-
         <div className="form-group">
           <label>Bajarish muddati</label>
-          <DateRangePicker placeholder="Select Date Range" />
+
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={["DatePicker"]}>
+              <DatePicker label="Basic date picker" />
+            </DemoContainer>
+          </LocalizationProvider>
         </div>
         <div className="form-group">
           <label>Topshiriq mazmuni</label>
@@ -73,13 +88,16 @@ const TaskForm = () => {
             <label type="file" form="file" className="add-btn colorFile">
               <FaPaperclip />
               Fayl biriktirish
-              <input type="file" style={{display:"none"}} name="file" id="" />
+              <input
+                type="file"
+                style={{ display: "none" }}
+                name="file"
+                id=""
+              />
             </label>
-
-            
           </div>
           {/* -----------button//////----- */}
-
+          Create
           <div className="action-buttons">
             <button onClick={handleSave} className="save-btn">
               <FaSave />

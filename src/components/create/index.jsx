@@ -52,7 +52,7 @@ const EmployeeModal = ({ open, onClose }) => {
 
 const Create = ({props ,icons, className}) => {
   const [showModal, setShowModal] = useState(false);
-  console.log("saloo", className);
+
   
   return (
     <div >
