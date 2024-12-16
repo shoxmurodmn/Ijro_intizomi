@@ -1,0 +1,9 @@
+.wrapperInformation{
+      display: flex;
+      
+      gap: 2px;
+
+      max-width: 1200px;
+      width: 100%;
+      margin: 20px auto;
+      }

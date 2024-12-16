@@ -1,0 +1,18 @@
+.task_box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 35px;
+      
+      border-radius:5px ;
+
+      background-color: #fff;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.093);
+      /* box-shadow: 0px 0px 1px 0px rgba(34, 60, 80, 0.2); */
+}
+.task_box_taxt{
+      font-weight: 500 !important;
+}
+.task_box_nuber{
+      font-weight: 700;
+}

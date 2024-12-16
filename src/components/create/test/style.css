@@ -1,0 +1,79 @@
+/* Qidiruv maydoni uslubi */
+.search-input {
+      padding: 8px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 8px;
+    }
+    
+    /* Dropdown uchun uslublar */
+    .suggestions-box{
+      position: relative;
+    }
+    .suggestions-dropdown {
+      list-style: none;
+      margin: 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      position: absolute;
+      background: #fff;
+      z-index: 10;
+      width: 100%;
+    }
+    
+    .suggestion-item {
+      width:100%;
+      height: auto;
+      padding: 8px;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      
+      top: 0;
+      lef: 0;
+    }
+    
+    .suggestion-item:hover {
+      background-color: #f0f0f0;
+    }
+    
+    /* Tanlangan foydalanuvchilar ro‘yxati */
+    .selected-users {
+      margin-top: 16px;
+    }
+    
+    .selected-user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    
+    .selected-user strong {
+      display: block;
+    }
+    
+    .selected-user p {
+      margin: 0;
+      color: #555;
+    }
+    
+    /* O'chirish tugmasi */
+    .remove-button {
+      background: red;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    
+    .remove-button:hover {
+      background: darkred;
+    }
+
+    

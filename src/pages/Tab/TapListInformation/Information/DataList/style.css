@@ -1,0 +1,34 @@
+.info_nav{
+      width: 480px;
+      height: 64px;
+      background-color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+}
+
+.info_List{
+      width: 480px;
+      height: 480px;
+
+      background-color: #fff;
+      margin: 2px 0;
+}
+
+
+.info_footer{
+      width: 480px;
+      height: 72px;
+      background-color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      gap: 15px;
+      
+}
+
+.list_page{
+      /* display: flex;
+      align-items: center; */
+      margin-top:10px ;
+}

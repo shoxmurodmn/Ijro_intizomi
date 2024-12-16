@@ -1,0 +1,108 @@
+/* Modalni asosiy konteyner */
+.modal-container {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    
+    /* Tashkilotlararo va Toggle label */
+    .toggle-container {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .toggle-label {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    
+    /* SelectPicker joylashuvi */
+    .select-picker {
+      width: 100%;
+      overflow: unset;
+    }
+    
+    /* Tugmalar styling */
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    
+    .primary-button {
+      background-color: #5639e0;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .primary-button:hover {
+      background-color: #4a32cc;
+    }
+    
+    .subtle-button {
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #ddd;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .subtle-button:hover {
+      background-color: #f7f7f7;
+    }
+    
+    .add-btn, .save-btn, .clear-btn {
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #FFF;
+      border: 1px solid #ccc;
+
+    }
+    
+    .add-btn {
+      
+      color: #22C55E;
+    }
+    
+    .add-btn:hover {
+      background-color: #F5F5F5;
+    }
+    
+    .save-btn {
+     background-color: blue;
+      color: white;
+      
+    }
+    
+    .save-btn:active {
+      transition: all 0.s ease;
+      background-color: #4F46E5;
+    }
+    
+    .clear-btn {
+      background-color: red;
+      color: white;
+    }
+    
+    .clear-btn:active {
+      background-color: #e53935;
+    }
+    .coloradd{
+      color: #45a049;
+    }
+    .color_supervisor{
+      color: #6BA1F8;
+    }
+    .colorFile{
+      color: #4F46E5;
+    }

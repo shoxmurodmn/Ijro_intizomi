@@ -1,0 +1,60 @@
+.wrapper{
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.093);
+}
+.box{
+      height: 80px;
+      max-width: 1400px;
+      padding: 0 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+.nvabar_taps{
+     gap: 20px; 
+}
+.logo{
+      cursor: pointer;
+}
+.logo_box{
+      display: flex;
+      align-items: center;
+}
+
+.logo_name{
+      font-size: 14px;
+      
+}
+.nav_list_item{
+      padding: 0 16px;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+
+      color: #4F4F4F;
+}
+
+.active-link{
+      color: #4F46E5;
+}
+
+.active-link.span.svg.path{
+      fill: #4F46E5;
+}
+
+.svgActiv{
+      fill: #4F46E5;
+}
+
+.svgNoActive{
+      fill: #4F4F4F;
+
+}
