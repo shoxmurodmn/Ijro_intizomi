@@ -70,10 +70,13 @@ const TaskForm = () => {
               props="Nazoratchi qo'shish"
               icons={<FaUserCheck />}
             ></Create>
-            <button className="add-btn colorFile">
+            <label type="file" form="file" className="add-btn colorFile">
               <FaPaperclip />
               Fayl biriktirish
-            </button>
+              <input type="file" style={{display:"none"}} name="file" id="" />
+            </label>
+
+            
           </div>
           {/* -----------button//////----- */}
 
